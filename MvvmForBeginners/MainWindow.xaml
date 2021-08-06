@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:MvvmForBeginners"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="450"
-        Width="800">
+        Height="400"
+        Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150" />
@@ -37,6 +37,28 @@
                 <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Name"
+                       Margin="5,3" />
+            <TextBox x:Name="NameTextBox"
+                     Grid.Row="0"
+                     Grid.Column="1"
+                     Margin="5,3" />
+            
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Your name is: "
+                       Margin="5,3" />
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Margin="5,3" />
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Left"
+                    Content="Add Me" Margin="5,3" MinWidth="75"/>
         </Grid>
     </Grid>
 </Window>
